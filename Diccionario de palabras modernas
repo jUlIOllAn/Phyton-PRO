@@ -1,0 +1,21 @@
+print("Bienvendio al diccionario de palabras modernas, tienes la oportunidad de preguntar 5 palabras "
+"que lo disfrutess!!")
+print()
+
+for i in range(5):
+    meme_dict = {
+                "CRINGE": "Algo excepcionalmente raro o embarazoso",
+                "LOL": "Una respuesta común a algo gracioso",
+                "XD": "Algo gracioso, para morir de risa",
+                "ROFL": "Una respuesta a una broma",
+                "SHEESH": "Una ligera desaprobacion",
+                "CREEPY": "Algo aterrador o siniestro",
+                "AGGRO": "Ponerse agresivo",
+                }
+
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+
+    if word in meme_dict.keys():
+        print(meme_dict[word])
+    else:
+        print("Lo siento, esta palabra no se encuentra en el diccionario!!")
