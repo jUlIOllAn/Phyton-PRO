@@ -1,0 +1,14 @@
+import random
+
+longitud = int(input("De cuanto quieres que sea la longitud de tu contraseña? "))
+
+def generador(longitud):
+    characters = "+-/*!&$?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    pass_generada =  ""
+
+    for i in range(longitud):
+        pass_generada += random.choice(characters)
+
+    return pass_generada
+
+print(generador(longitud))
